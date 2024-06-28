@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Integration Examples</title>
+</head>
+<body>
+
+	<button onclick="alert('Inline JavaScript')">Click me (Inline JS)</button>
+
+	<script>
+	function showMessage() {
+			alert('JavaScript inside <script> tag');
+		}
+	</script>
+	<button onclick="showMessage()">Click me (tag JS)</button>
+
+	<script src="external.js"></script>
+	<button onclick="externalFunction()">Click me (External JS)</button>
+
+	<button id="eventListenerButton">Click me (Event Listener JS)</button>
+	<script>
+	document.getElementById('eventListenerButton').addEventListener('click', function () {
+			alert('JavaScript Event Listener');
+		});
+	</script>
+
+	<a href="javascript:alert('This is an inline JavaScript alert!')">Click me</a>
+
+</body>
+</html>

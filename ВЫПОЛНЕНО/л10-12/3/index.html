@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array</title>
+</head>
+<body>
+	<div id="output"></div>
+
+	<script>
+        // Функция для генерации случайного целого числа в диапазоне от min до max (включительно)
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Создание массива из 6 случайных целых чисел
+        const array = [];
+        for (let i = 0; i < 6; i++) {
+            array.push(getRandomInt(1, 100));
+        }
+
+        // Вывод исходного массива
+        const outputDiv = document.getElementById('output');
+        outputDiv.innerHTML += `<p>Original array: [${array.join(', ')}]</p>`;
+
+        // Нахождение суммы чётных элементов массива
+        const evenSum = array.reduce((sum, num) => {
+            return num % 2 === 0 ? sum + num : sum;
+        }, 0);
+
+        outputDiv.innerHTML += `<p>Sum of honest elements: ${evenSum}</p>`;
+
+        // Сортировка массива по убыванию
+        const sortedArray = array.slice().sort((a, b) => b - a);
+
+        // Вывод изменённого массива
+        outputDiv.innerHTML += `<p>Chanched array: [${sortedArray.join(', ')}]</p>`;
+	</script>
+</body>
+</html>

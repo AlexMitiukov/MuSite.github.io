@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Strings</title>
+</head>
+<body>
+	<div id="output"></div>
+
+	<script>// Создание строковых переменных S1 и S2
+        let S1 = "I love Belarus";
+        let S2 = "I in GGPK";
+
+        // Определение длины строки S1
+        const lengthS1 = S1.length;
+
+        // Удаление подстроки "учусь" из строки S2
+        S2 = S2.replace("in", "");
+
+        // Замена всех встречающихся символов "ю" на "*"
+        S1 = S1.replace(/l/g, "*");
+
+        // Вывод результатов
+        const outputDiv = document.getElementById('output');
+		outputDiv.innerHTML += `<p>Original string S1: "I love Belarus"</p>`;
+        outputDiv.innerHTML += `<p>Chenged string S1: "${S1}"</p>`;
+        outputDiv.innerHTML += `<p>String's lenght' S1: ${lengthS1}</p>`;
+        outputDiv.innerHTML += `<p>Chenged string S2: "${S2.trim()}"</p>`;</script>
+</body>
+</html>
