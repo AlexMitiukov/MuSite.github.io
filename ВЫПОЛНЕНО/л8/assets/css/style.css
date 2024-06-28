@@ -1,0 +1,392 @@
+﻿body
+{
+    font-size: 18px;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.submission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+}
+
+.form-container {
+    display: flex;
+    width: 45%;
+    height: 50%;
+    flex-direction: column;
+    background-color: #333;
+    height: 75%;
+    padding: 20px;
+    opacity: 0.8;
+    background: url("../img/background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.fon_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding-bottom: 6%;
+    border-radius: 5px;
+}
+
+.title {
+    color: white;
+}
+
+.sub_title {
+    color: rgb(255,255,255,0.7);
+}
+
+.form {
+    width: 70%;
+    height: 100%;
+}
+
+.input {
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+.button {
+    margin-top: 2%;
+    margin-left: 30%;
+}
+
+.line {
+    border-bottom: 3px solid red;
+    color: white;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 5fr;
+    grid-template-rows: 4fr 5fr 1fr 5fr 4fr 5fr 4fr 5fr 5fr;
+    height: 100%;
+    width: 100%;
+}
+
+.card_sovet {
+    background-color: purple;
+    color: white;
+    font-size: 18px;
+    grid-column: 1;
+    grid-row: 1;
+    height: 70%;
+    width: 85%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_novinka {
+    background-color: lime;
+    color: white;
+    font-size: 18px;
+    grid-column: 2;
+    grid-row: 1;
+    height: 70%;
+    width: 85%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_akcia {
+    background-color: orange;
+    font-size: 18px;
+    grid-column: 3;
+    grid-row: 1;
+    height: 70%;
+    width: 55%;
+    justify-self: self-start;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_like {
+    grid-column: 5;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.card_stat {
+    grid-column: 5;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.card_stars {
+    grid-column: 6;
+    grid-row: 1;
+    justify-self: self-start;
+    align-self: center;
+}
+
+.card_opis {
+    grid-column: 6;
+    grid-row: 2;
+    text-align: left;
+    justify-self: self-start;
+    align-self: center;
+}
+
+    .card_opis span {
+        color: blue;
+        cursor: pointer;
+    }
+
+.card_line {
+    border-bottom: 1px solid black;
+    grid-column: 6;
+    grid-row: 3;
+}
+
+.card_price {
+    grid-column: 6;
+    grid-row: 4;
+    align-self: self-end;
+    text-align: left;
+    justify-self: self-start;
+    font-size: 26px;
+}
+
+    .card_price span {
+        color: grey;
+        font-size: 16px;
+        text-decoration: line-through;
+    }
+
+.card_economy {
+    grid-column: 6;
+    grid-row: 5;
+    align-self: center;
+    text-align: left;
+    justify-self: self-start;
+}
+
+    .card_economy span {
+        background-color: orange;
+    }
+
+.card_date {
+    width: 50%;
+    justify-self: self-start;
+    grid-column: 6;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card_date_end {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    align-self: center;
+    text-align: left;
+    justify-self: self-start;
+    color: grey;
+}
+
+.card_date_ostat {
+    grid-column: 6;
+    grid-row: 1;
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    color: grey;
+}
+
+.card_date_grey {
+    grid-area: 2 / 1 / 4 / 6;
+    background-color: grey;
+}
+
+.card_date_number1 {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 24px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.card_date_day {
+    color: rgba(0, 0, 0, 0.5);
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+}
+
+.card_date_dv1 {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+}
+
+.card_date_number2 {
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 24px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.card_date_hour {
+    color: rgba(0, 0, 0, 0.5);
+    grid-column: 3;
+    grid-row: 3;
+    text-align: center;
+}
+
+.card_date_dv2 {
+    grid-column: 4;
+    grid-row: 2 / 4;
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+}
+
+.card_date_number3 {
+    grid-column: 5;
+    grid-row: 2;
+    font-size: 24px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.card_date_min {
+    color: rgba(0, 0, 0, 0.5);
+    grid-column: 5;
+    grid-row: 3;
+    text-align: center;
+}
+
+.card_date_blue {
+    background-color: blue;
+    grid-area: 2 / 6 / 4 / 7;
+}
+
+.card_date_number4 {
+    grid-column: 6;
+    grid-row: 2;
+    background-color: blue;
+    font-size: 24px;
+    color: white;
+    align-self: center;
+    text-align: center;
+}
+
+.card_date_sht {
+    color: rgba(0, 0, 0, 0.5);
+    grid-column: 6;
+    grid-row: 3;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+.card_row {
+    grid-column: 6;
+    grid-row: 7;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.card_row_text {
+    cursor: pointer;
+}
+
+    .card_row_text span {
+        text-decoration: underline;
+        color: grey;
+    }
+
+.card_row_empty {
+    width: 5%;
+}
+
+.card_korzina {
+    grid-column: 6;
+    grid-row: 8;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 16% 16% 16% 4% 48%;
+    grid-template: 1fr;
+    align-self: center;
+}
+
+.card_korzina_area1 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background-color: grey;
+}
+
+.card_korzina_minus {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.card_korzina_number {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.card_korzina_plus {
+    grid-row: 1;
+    grid-column: 3;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.card_korzina_korz {
+    grid-row: 1;
+    grid-column: 5;
+    background-color: blue;
+    color: white;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.card_buy {
+    grid-column: 6;
+    grid-row: 9;
+    justify-self: self-start;
+    align-self: self-start;
+    color: blue;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+.card_cycle {
+    grid-area: 3 / 1 / 9 / 6;
+    justify-self: center;
+    align-self: center;
+}
