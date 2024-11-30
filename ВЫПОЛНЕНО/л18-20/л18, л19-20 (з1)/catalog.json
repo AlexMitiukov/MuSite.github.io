@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "name": "football ball",
+      "description": "ball",
+      "price": 2000,
+      "quantity": 50
+    },
+    {
+      "id": 2,
+      "name": "ski poles",
+      "description": "ski poles",
+      "price": 1500,
+      "quantity": 100
+    },
+    {
+      "id": 3,
+      "name": "basketvall ball",
+      "description": "ball",
+      "price": 1200,
+      "quantity": 75
+    },
+    {
+      "id": 4,
+      "name": "sneakers",
+      "description": "sneakers",
+      "price": 800,
+      "quantity": 200
+    },
+    {
+      "id": 5,
+      "name": "racket",
+      "description": "racket",
+      "price": 1800,
+      "quantity": 60
+    },
+    {
+      "id": 6,
+      "name": "skis",
+      "description": "skis",
+      "price": 2500,
+      "quantity": 40
+    },
+    {
+      "id": 7,
+      "name": "snowboard",
+      "description": "snowboard",
+      "price": 1000,
+      "quantity": 90
+    },
+    {
+      "id": 8,
+      "name": "boots",
+      "description": "boots",
+      "price": 900,
+      "quantity": 120
+    },
+    {
+      "id": 9,
+      "name": "swimming goggles",
+      "description": "swimming goggles",
+      "price": 1300,
+      "quantity": 85
+    },
+    {
+      "id": 10,
+      "name": "swimming cap",
+      "description": "swimming cap",
+      "price": 2200,
+      "quantity": 30
+    }
+  ]

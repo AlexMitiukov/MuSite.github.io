@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Регулярные выражения</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Регулярные выражения на JavaScript</h1>
+
+        <div class="container">
+            <h2>Проверка email</h2>
+            <input type="text" id="emailInput" placeholder="Введите email">
+            <button onclick="checkEmail()">Проверить</button>
+            <p id="emailResult"></p>
+
+            <h2>Поиск слова</h2>
+            <input type="text" id="searchTextInput" placeholder="Введите текст для поиска">
+            <input type="text" id="searchInput" placeholder="Введите слово для поиска">
+            <button onclick="searchWord()">Поиск</button>
+            <p id="searchResult"></p>
+
+            <h2>Замена слов</h2>
+            <input type="text" id="replaceInput" placeholder="Введите текст">
+            <input type="text" id="wordToReplace" placeholder="Слово для замены">
+            <input type="text" id="replacementWord" placeholder="Новое слово">
+            <button onclick="replaceWord()">Заменить</button>
+            <p id="replaceResult"></p>
+
+            <h2>Разделение строки</h2>
+            <input type="text" id="splitInput" placeholder="Введите строку для разделения (через запятую)">
+            <button onclick="splitString()">Разделить</button>
+            <p id="splitResult"></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

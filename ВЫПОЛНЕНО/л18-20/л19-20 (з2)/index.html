@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Сохранение данных</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+    <h1>Сохранение данных в Cookie</h1>
+    <form id="cookieForm">
+        <label for="name">ФИО:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="birthdate">Дата рождения:</label><br>
+        <input type="date" id="birthdate" name="birthdate"><br>
+        <label for="birthplace">Место рождения:</label><br>
+        <input type="text" id="birthplace" name="birthplace"><br>
+        <label for="hobbies">Увлечения:</label><br>
+        <textarea id="hobbies" name="hobbies"></textarea><br><br>
+        <button type="button" onclick="saveToCookie()">Сохранить в Cookie</button>
+        <button type="button" onclick="getCookieData()">Получить из Cookie</button>
+        <button type="button" onclick="clearCookie()">Очистить Cookie</button>
+    </form>
+    <div id="cookieOutput"></div>
+
+
+    <h1>Сохранение данных в Local Storage</h1>
+    <form id="localStorageForm">
+        <label for="lname">ФИО:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="lemail">Email:</label><br>
+        <input type="email" id="lemail" name="lemail"><br>
+        <button type="button" onclick="saveToLocalStorage()">Сохранить в Local Storage</button>
+        <button type="button" onclick="getLocalData()">Получить из Local Storage</button>
+        <button type="button" onclick="clearLocalStorage()">Очистить Local Storage</button>
+    </form>
+    <div id="localStorageOutput"></div>
+
+    <script src="script.js"></script>
+    </body>
+</html>

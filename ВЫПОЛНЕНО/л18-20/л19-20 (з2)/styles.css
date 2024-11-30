@@ -1,0 +1,37 @@
+form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #cookieOutput, #localStorageOutput {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    white-space: pre-wrap; /*для переноса строк в pre*/
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
